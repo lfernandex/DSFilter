@@ -1,0 +1,9 @@
+.container-products{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-count{
+    padding-right: 5px;
+}

@@ -1,0 +1,31 @@
+
+
+
+.description-card {
+    padding: 10px;
+}
+
+.details-product{
+    border: 1px solid #55BC04;
+    border-radius: 5px;
+
+    max-height: 53px;
+
+    padding: 10px;
+}
+
+.details-product h1{
+    color: #6F6F6F;
+    font-size: 12px;
+}
+
+.details-product h2{
+    color: #55BC04;
+    font-size: 16px;
+
+    padding-top: 2px;
+}
+
+.padding-bottom{
+    padding-top: 10px;
+}

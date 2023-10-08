@@ -1,27 +1,24 @@
-# React + TypeScript + Vite
+# DESAFIO: DSFilter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Desafio consiste em criar uma interface conforme design Figma abaixo:
+https://www.figma.com/file/s21JDtjv3cRyUfetFYAzIJ/DSFilter
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## seguindo caso de uso:
+            Caso de uso: listar produtos
+      1. [OUT] O sistema informa nome e preço de todos produtos, ordenados por preço.
+      2. [IN] O usuário informa, opcionalmente, preço mínimo e preço máximo dos produtos
+      3. [OUT] O sistema informa nome e preço dos produtos, ordenados por preço, conforme critérios
+      Informações complementares:
+      - Não precisa fazer validação de formulário (assuma que o usuário vai digitar valores válidos).
+      - Não precisa implementar rotas (pode montar a tela toda no App)
+      - Se o valor do preço mínimo não for informado, usar por padrão o valor 0 (zero).
+      - Se o valor do preço máximo não for informado, usar por padrão o valor Number.MAX_VALUE
 
-## Expanding the ESLint configuration
+### Sem valores informados:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![image](https://github.com/lfernandex/DSFilter/assets/106842103/5a85aa66-6723-4939-87bf-ef3f007421de)
 
-- Configure the top-level `parserOptions` property like this:
+### Valores informados opcionalmente:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![image](https://github.com/lfernandex/DSFilter/assets/106842103/5cd82dd4-e7c3-4dea-95b9-c451acf830de)
